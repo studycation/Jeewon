@@ -14,24 +14,73 @@
                 <legend>기본 정보</legend>
                 <p>
                     <label>아이디</label>
-                    <input type="text">
+                    <input type="id" placeholder="아이디를 입력해주세요">
                 </p>
                 <p>
                     <label for="passwd">비밀번호</label>
-                    <input type="text" id="passwd">
+                    <input type="text" id="passwd" placeholder="비밀번호를 입력해주세요">
                 </p>
             </fieldset>
             <fieldset>
                 <legend>선택 정보</legend>
                 <p>
-                    <label for="age">나이</label>
-                    <textarea type="number" id="age"></textarea>
+                    <label for="age" maxlength="2">나이</label>
+                    <textarea type="number" id="age" maxlength="2"></textarea>  
+                    <!--여러줄O--><!--두자리 까지만 입력가능-->
                 </p>
                 <p>
-                    <label>추천인</label>
-                    <input type="text">
+                    <label for="city">지역</label>
+                    <select name="city" id="city" size="3" multiple>
+                        <optgroup label="서울시">
+                            <option value="강북구">강북구</option>
+                            <option value="강북구" selected>서초구</option>
+                        </optgroup>
+                        <optgroup label="경기도 성남시">
+                            <option value="중원구">중원구</option>
+                            <option value="부당구">분당구</option>
+                        </optgroup>
+                    </select>
                 </p>
             </fieldset>
+            <fieldset>
+              
+                    <legend>좋아하는 과일</legend>
+                    <label for="banana">banana</label>
+                    <input type="checkbox" id="banana" name="바나나" value="바나나"></br>
+                    <!--id랑 for이랑 동일해야 함-->
+                    <!--체크박스가 뒤에 나옴-->
+                    <input type="checkbox" id="apple" name="사과" value="사과">
+                    <label for="apple">apple</label></br>
+                    <!--체크박스 먼저-->
+                    <input type="checkbox" id="orange" name="오렌지" value="오렌지">
+                    <label for="orange">orange</label></br>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>성적</legend>
+                <table>
+                    <col style="width:90px">
+                    <colgroup span="2" style="width:120px"></colgroup>
+
+                    <tr>
+                        <th scope="col">구분</th>
+                        <th>중간고사</th>
+                        <th>기말고사</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">전공</th>
+                        <td>A+</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">교양</th>
+                        <td>B+</td>
+                        <td>A+</td>
+                    </tr>
+                </table>
+            </fieldset>
+
         </form>
     </body>
 </html>
