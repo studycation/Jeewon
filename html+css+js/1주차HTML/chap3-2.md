@@ -60,7 +60,7 @@
         </optgroup>
     </select>
 
-
+</br>
 7.button 태그: input태그는 type,name,value 로 나타낼 수 있는데 .. --> button태그만 따로 만들 수도 있음!!</br>
 --> 마찬가지로 type 속성값 가짐
 
@@ -69,7 +69,7 @@
         페이스북에 등록하기
     </button>
 
-
+</br>
 ***폼 관련 태그에서 공통으로 사용할 수 있는 것</br>
 1.disabled 속성: 태그가 비활성화 됨</br>
     
