@@ -2,7 +2,6 @@ from flask import *
 
 app = Flask(__name__)
 
-# 홈화면
 @app.route('/')
 def defaultpage():
     return render_template("fieldset.html")
