@@ -20,6 +20,6 @@ from django.urls import path,include
 from encrytor import views
 
 urlpatterns = [
-    path('',include('encrytor.urls')),      # 쉼표 잘 쓰기,,
+    path('encrytor/',include('encrytor.urls')),      # 쉼표 잘 쓰기,,
     path('admin/', admin.site.urls),
 ]
