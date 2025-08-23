@@ -1,0 +1,23 @@
+{% extends 'encrytor/base.html' %}
+{% load static %}
+{% block content %}
+<h2>UPLOAD FILE</h2>
+    <form method="post" type="mutipart/form-data">
+        {% csrf_token %}
+        <!-- 숨겨진 파일 input + upload -->
+        <input type="file" name="file" required>
+        <button type="submit">업로드</button>
+
+        <!--서버 메시지 표시-->
+        <div class="msg" style="margin-top:12px;">
+            {% if success %}
+            <div class="ok" style="color:#0a7b00">{{ success }}</div>
+            {% endif %}
+
+            {% if error %}
+            <div class="err" style="color:#b00020">{{ error }}</div>
+            {% endif %}
+        </div>
+    </form>
+
+{% endblock %}
