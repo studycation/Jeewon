@@ -67,6 +67,11 @@ TEMPLATES = [
     },
 ]
 
+#LOGIN_URL = '/login/'          # 로그인 페이지
+#LOGIN_REDIRECT_URL = '/upload/'   # 로그인 성공 시 이동할 URL
+#LOGOUT_REDIRECT_URL = '/encrytor/login/'  # 로그아웃 후
+
+
 WSGI_APPLICATION = 'config.wsgi.application'
 
 
