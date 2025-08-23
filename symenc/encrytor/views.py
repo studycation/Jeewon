@@ -15,3 +15,9 @@ def main(request):
 def login(request):
     context = {}
     return render(request, 'encrytor/login.html',context)
+
+
+def upload(request):
+    #items = Encrytor.objects.all()
+    #, {'items': items}
+    return render(request, 'encrytor/upload.html')
