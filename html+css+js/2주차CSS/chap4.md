@@ -8,7 +8,7 @@
     h1{
         font-size:24px;
         color:red;
-    }
+    } 
 
 2.주석: /* 주석 내용 */
 
